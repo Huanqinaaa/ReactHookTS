@@ -1,0 +1,114 @@
+html {
+    font-size: 16px;
+}
+
+html, body, #root, .App, .integrity {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    margin-top: 0px;
+}
+
+.App {
+    overflow: hidden;
+}
+
+.integrity {
+    width: 240rem;
+    animation: switch 15s ease-out infinite;
+}
+
+@keyframes switch {
+    0%, 25% {
+        margin-left: 0;
+    }
+    
+    35%, 60% {
+        margin-left: -80rem;
+    }
+    
+    70%, 100% {
+        margin-left: -160rem;
+    }
+}
+
+.progress_bar {
+    width: 0%;
+    height: 0.125rem;
+    background-color: white;
+    z-index: 2;
+    animation: progressBar 5s ease-out 1;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0%;
+    }
+    
+    99% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+
+}
+
+.section {
+    display: inline-block;
+    width: 80rem;
+    height: 100%;
+    vertical-align: top;
+}
+
+.section.one {
+    color: white;
+    background: transparent url("../assets/iphone.png") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.section.two {
+    color: black;
+    background: transparent url("../assets/tablet.png") no-repeat center center;
+    background-size: auto 100%;
+}
+
+.section.three {
+    color: black;
+    background: transparent url("../assets/airpods.png") no-repeat center center;
+    background-size: auto 100%;
+}
+
+.headline {
+    font-size: 5rem;
+}
+
+.sub_headline {
+    font-size: 2.5rem;
+}
+
+.navBar {
+    position: fixed;
+    left: 34.5rem;
+    top: 90%;
+}
+
+.navBar > div {
+    display: inline-block;
+    width: 3rem;
+    height: 0.125rem;
+    background-color: grey;
+    margin-right: 1rem;
+    z-index: 1;
+}
